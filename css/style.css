@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Poppins-Bold";
+  font-size: 3rem;
+}
+
+h2,
+h3 {
+  font-family: "Poppins";
+}
+
+p {
+  font-family: "Poppins-ExtraLight";
+}
+
+.banner {
+  padding: 4rem;
+  background: linear-gradient(-45deg, #16141b, #4a428f, #23a6d5, #630085);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  color: white;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100hv;
+}
+
+.text_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 50px;
+  height: 50px;
+   margin: 2rem;
+   font-size: 30px;
+
+}
+
+.circle i {
+  color:  #25aae1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.section_text {
+  margin-top: 4rem;
+
+}
+
+.section_img {
+  margin-top: 1rem;
+}
+
+.section_img img {
+  width: 100%;
+}
+
+.container_button {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: large;
+  color: white;
+  padding: 1rem;
+  width:max-content;
+  border-radius: 20px;
+  margin: 1rem;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #25aae1);
+
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.button:hover{
+  background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.tag {
+  text-align: center;
+  margin: 2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enfasis {
+  margin: 3rem 1rem 1rem 1rem;
+  font-size: 3rem;
+  background: -webkit-linear-gradient( #25aae1, #40e495);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  margin: 1rem;
+  min-height: 700px;
+  position: relative;
+}
+
+.card_header {
+  padding: 1rem;
+  background: linear-gradient(-45deg, #16141b, #4a428f, #23a6d5, #630085);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+
+.card li {
+  font-family: "Poppins-ExtraLight";
+  border-bottom: 1px solid rgb(211, 211, 211);
+  text-decoration: none;
+  list-style: none;
+  padding: 1rem;
+}
+
+.card_footer {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.card .button{
+  position: absolute;
+  bottom: 0;
+}
+
+footer{
+  bottom: 0;
+  background-color: #16141b;
+  height: 100px;
+  width: 100%;
+  color: #eee;
+  padding: 2rem;
+}
+
+
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:20px;
+  right:20px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;  
+  font-size:30px;  
+  text-decoration: none;
+}
+
+.whatsapp :hover {
+  color: white;
+}
+
+.botton_elevator{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width:60px;
+  height:60px; 
+  margin: 1rem;
+  background-color:#00c3ff;
+  color:#FFF;
+  border-radius:50px;  
+  font-size:30px;  
+  text-decoration: none;
+  z-index: 1;
+}
